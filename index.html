@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
@@ -110,6 +110,56 @@
     <p>Save Children From Hunger</p>
   </div>
     </div></div>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {  
+    display: grid;  
+    grid-gap: 5px;  
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);  
+}
+.container > div > img {  
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive "Side-by-Side" Images</h2>
+<p>How to create side-by-side images with the CSS float property. On screens that are 500px wide or less, the images will stack on top of each other instead of next to each other:</p>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="container">
+  <div >
+    <!-- 1 -->
+    <img src="img_snow.jpg" alt="Snow" >
+  </div>
+  <div >
+    <!-- 2 -->
+    <img src="img_forest.jpg" alt="Forest" >
+  </div>
+  <div >
+    <!-- 3 -->
+    <img src="img_mountains.jpg" alt="Mountains" >
+  </div>
+  <div >
+    <!-- 4 -->
+    <img src="img_mountains.jpg" alt="Mountains" >
+  </div>
+  <div >
+    <!-- 5 -->
+    <img src="img_mountains.jpg" alt="Mountains" >
+  </div>
+</div>
 
 </body>
 </html>
